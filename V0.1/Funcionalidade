@@ -1,0 +1,14 @@
+Atualmente já pode se criar variaveis na memoria, fazer syscalls e relacionados, mas os endereços devem ser escritos na mão e não tem como definir nomes de variaves, o GO não movimenta entre registradores e não aceita minusculas
+E:
+.info
+DB "Hello World!"
+.every
+GO ZLA, 1
+GO ZLP, 1
+GO ZLE, 0x600000
+GO ZLD, 12
+RUNSYS
+
+GO ZLA, 60
+GO ZLP, 0
+RUNSYS
