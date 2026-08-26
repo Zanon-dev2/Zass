@@ -1,5 +1,5 @@
 Atualmente já pode se criar variaveis na memoria, fazer syscalls e relacionados, mas os endereços devem ser escritos na mão e não tem como definir nomes de variaves, o GO não movimenta entre registradores e não aceita minusculas
-E:
+#E:
 .info
 DB "Hello World!"
 .every
@@ -12,3 +12,5 @@ RUNSYS
 GO ZLA, 60
 GO ZLP, 0
 RUNSYS
+->nasm -f elf64 zass.asm -o zass.o && ld zass.o -o zass
+-> ./zass < code.txt outputName
